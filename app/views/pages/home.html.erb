@@ -1,2 +1,23 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%= render "partials/navbar" %>
+
+<div class="banner">
+    <div class="d-flex align-items-center flex-column">
+        <h1>Alice Gerelli</h1>
+        <h1>Yoga</h1>
+    </div>
+    <div class ="d-flex align-items-center flex-column">
+        <h3>scopri</h1>
+        <a href="#yoga">
+         <i class="fa-solid fa-arrow-down-long"></i>
+        </a>
+    </div>
+</div>
+
+
+<%= render "partials/alice" %>
+<%= render "partials/yoga" %>
+<%= render "partials/gallery" %>
+<%= render "partials/blog" %>
+<%= render "partials/youtube" %>
+<%= render "partials/classes" %>
+<%= render "partials/contacts" %>

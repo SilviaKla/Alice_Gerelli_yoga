@@ -1,12 +1,54 @@
-.navbar-lewagon {
+.navbar-AliceYoga {
   justify-content: space-between;
-  background: white;
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  background-color: #0f4d5c5f;
+  box-shadow: none;
+  position: sticky;
+  transition-property: background-color, font-size, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-AliceYoga:hover {
+  background-color: #0f4d5c;
+  transition-property: background-color, font-size, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+
+.navbar-AliceYoga .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-AliceYoga .navbar-brand{
+  margin: 0;
+}
+
+.navbar-AliceYoga .navbar-brand img {
+  width: 60px;
+  margin: 0 20px;
+}
+
+.navbar-AliceYoga > .container-fluid {
+display: flex;
+margin: 0;
+}
+
+.navbar-AliceYoga a {
+  margin: 0 40px;
+  font-family: $headers-font;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-AliceYoga a:hover {
+  color: $orange;
+}
+
+.navbar-toggler {
+  border: 0px;
+  background-color: white;
 }
