@@ -1,7 +1,21 @@
 .navbar-AliceYoga {
   justify-content: space-between;
-  background: $bottle-blue;
   z-index: 999;
+  position: absolute;
+  width: 100%;
+  background-color: #0f4d5c5f;
+  box-shadow: none;
+  position: sticky;
+  transition-property: background-color, font-size, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+
+.navbar-AliceYoga:hover {
+  background-color: #0f4d5c;
+  transition-property: background-color, font-size, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
 }
 
 .navbar-AliceYoga .navbar-collapse {
