@@ -1,12 +1,40 @@
-.navbar-lewagon {
+.navbar-AliceYoga {
   justify-content: space-between;
-  background: white;
+  background: $bottle-blue;
+  z-index: 999;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-AliceYoga .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-AliceYoga .navbar-brand{
+  margin: 0;
+}
+
+.navbar-AliceYoga .navbar-brand img {
+  width: 60px;
+  margin: 0 20px;
+}
+
+.navbar-AliceYoga > .container-fluid {
+display: flex;
+margin: 0;
+}
+
+.navbar-AliceYoga a {
+  margin: 0 40px;
+  font-family: $headers-font;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-AliceYoga a:hover {
+  color: $orange;
+}
+
+.navbar-toggler {
+  border: 0px;
+  background-color: white;
 }
