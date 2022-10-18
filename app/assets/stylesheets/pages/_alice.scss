@@ -1,0 +1,39 @@
+#alice {
+  margin-top: 50px;
+  width: 100%;
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    position: relative;
+    bottom: -20px;
+  }
+
+  h2{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+   }
+
+  #container-green {
+    width: 100%;
+    background-color: #56825957;
+
+    img{
+      margin: 30px 0;
+      height: 600px;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 1px 2px 2px 1px rgba(11, 11, 11, 0.226);
+    }
+
+   p{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+   }
+  }
+}
