@@ -2,7 +2,7 @@
   justify-content: space-between;
   z-index: 999;
   width: 100%;
-  position: relative;
+  position: absolute;
   background-color: #0f4d5c5f;
   box-shadow: none;
   transition-property: background-color, font-size, transform, color;
@@ -17,29 +17,36 @@
   transition-duration: 2s;
 }
 
-.navbar-AliceYoga-scroll{
+.sticky-top{
+  justify-content: space-between;
+  z-index: 999;
+  width: 100%;
   background-color: #0f4d5c;
+  box-shadow: none;
+  transition-property: background-color, font-size, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
 }
 
-.navbar-AliceYoga .navbar-collapse {
+#navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-AliceYoga .navbar-brand{
+#navbar .navbar-brand{
   margin: 0;
 }
 
-.navbar-AliceYoga .navbar-brand img {
+#navbar .navbar-brand img {
   width: 60px;
   margin: 0 20px;
 }
 
-.navbar-AliceYoga > .container-fluid {
+#navbar > .container-fluid {
 display: flex;
 margin: 0;
 }
 
-.navbar-AliceYoga a {
+#navbar a {
   margin: 0 40px;
   font-family: $headers-font;
   font-weight: 700;
@@ -47,7 +54,7 @@ margin: 0;
   color: white;
 }
 
-.navbar-AliceYoga a:hover {
+#navbar a:hover {
   color: $orange;
 }
 
