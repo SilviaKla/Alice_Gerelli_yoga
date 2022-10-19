@@ -2,6 +2,7 @@
   justify-content: space-between;
   z-index: 999;
   width: 100%;
+  position: relative;
   background-color: #0f4d5c5f;
   box-shadow: none;
   transition-property: background-color, font-size, transform, color;
@@ -14,6 +15,10 @@
   transition-property: background-color, font-size, transform, color;
   transition-timing-function: ease-in-out;
   transition-duration: 2s;
+}
+
+.navbar-AliceYoga-scroll{
+  background-color: #0f4d5c;
 }
 
 .navbar-AliceYoga .navbar-collapse {
