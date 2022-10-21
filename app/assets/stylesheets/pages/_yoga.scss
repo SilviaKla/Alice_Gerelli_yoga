@@ -1,0 +1,54 @@
+#yoga {
+  margin-top: 20px;
+  width: 100%;
+
+  h2{
+    font-size: 35px;
+    margin : 40px;
+   }
+
+  #container-orange {
+    width: 100%;
+    background-image: image-url("backgrund.png");
+    background-repeat: repeat;
+    padding-bottom: 20px;
+
+    .avatar-large {
+      width: 90px;
+      border-radius: 50%;
+      border: white 5px solid;
+      background-color: #e484499d;
+      padding: 3px;
+      margin-top: 5px;
+    }
+
+    h2{
+      font-size: 35px;
+      margin : 0px
+     }
+
+    p{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e48549b4;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 25px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1207px) {
+
+  .avatar-large {
+    width: 90px;
+    border-radius: 50%;
+    position: relative;
+    top: -45px;
+    border: white 5px solid;
+    background-color: #e484499d;
+    padding: 3px;
+  }
+}
