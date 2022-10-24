@@ -1,0 +1,184 @@
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+}
+
+
+.photo-card-double {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#stones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: image-url("stones.jpeg");
+  transition-property: background-image, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+
+#stones:hover{
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("stones.jpeg");
+  transition-property: background-image, transform, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+}
+
+#meditation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: image-url("meditation.jpeg");
+}
+
+#meditation:hover{
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("meditation.jpeg");
+}
+
+#sun {
+  background-image: image-url("sun.jpeg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sun:hover{
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("sun.jpeg");
+}
+
+#mountain {
+  background-image: image-url("mountain.jpeg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#mountain:hover{
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("mountain.jpeg");
+}
+
+
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAEDCA;
+  padding: 20px;
+
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  p{
+    text-align: center;
+    font-size: 20px;
+  }
+
+  a{
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #e6712984;
+    color:black ;
+  }
+
+  a:hover{
+     background-color: #e67129fb;
+  }
+
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  #mountain {
+  grid-column: span 2 / auto;
+  grid-row: span 2 / auto;
+  }
+
+  .text-card{
+    grid-row: span 2 / auto;
+  }
+
+  #stones{
+    grid-row: span 2 / auto;
+  }
+
+  .photo-card-double {
+    grid-row: span 2 / auto;
+  }
+}
+
+@media (min-width: 970px) {
+  #mountain {
+  grid-row: span 2 / auto;
+  }
+
+  .text-card{
+    grid-row: span 2 / auto;
+  }
+
+  #stones{
+    grid-row: span 2 / auto;
+  }
+
+  .photo-card-double {
+    grid-row: span 2 / auto;
+  }
+}
+
+@media (min-width: 660px) {
+
+  .text-card{
+    grid-row: span 2 / auto;
+  }
+
+  .photo-card-double {
+    grid-row: span 2 / auto;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 575px) {
+
+  .photo-card-double {
+    display: none;
+  }
+
+  .text-card{
+    grid-row: span 2 / auto;
+  }
+}
