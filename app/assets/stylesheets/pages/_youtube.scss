@@ -1,0 +1,27 @@
+#youtube{
+  margin: 40px;
+
+  h2{
+    margin-bottom: 20px;
+  }
+
+  a{
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #e6712984;
+    color:black ;
+    margin: 40px;
+  }
+
+  a:hover{
+     background-color: #e67129fb;
+  }
+
+ .video{
+  padding: 0px;
+  margin-top: 40px;
+ }
+}
