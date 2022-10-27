@@ -1,0 +1,39 @@
+<div class= "container-fluid d-flex flex-column align-items-center" id = "classes">
+  <h2>i miei corsi</h2>
+  <% @lessons.each do |lesson| %>
+    <% if lesson.online == false %>
+        <div class= "col-12 container-blue d-flex flex-row justify-content-evenly align-items-center">
+          <div class= "col-12 col-lg-4">
+          <%= image_tag "https://i.picsum.photos/id/1025/4951/3301.jpg?hmac=_aGh5AtoOChip_iaMo8ZvvytfEojcgqbCH7dzaz-H8Y", class: "Alice", alt: "Alice" %>
+          </div>
+          <div class = "violet-text col-12 col-lg-4">
+            <h3><%= lesson.name %></h3>
+            <ul>
+              <li><%= lesson.description %></li>
+              <li> <strong> Dove: </strong> <%= lesson.address %></li>
+              <li> <strong> Per chi: </strong> <%= lesson.level %></li>
+              <li> <strong> Quando: </strong><%= lesson.when %></li>
+            </ul>
+            <a href="http://www.24hours7days.it/index.php/monza">info</a>
+          </div>
+        </div>
+    <% end %>
+    <% if lesson.online == true %>
+        <div class= "col-12 container-violet d-flex flex-lg-row-reverse justify-content-evenly align-items-center">
+          <div class= "col-12 col-lg-4">
+          <%= image_tag "https://i.picsum.photos/id/1038/3914/5863.jpg?hmac=SGtXryWDkn_eVQdA1NjYrikcsrIfcfS4SFYHo4lCpkQ", class: "Alice", alt: "Alice" %>
+          </div>
+          <div class = "violet-text col-12 col-lg-4">
+            <h3><%= lesson.name %></h3>
+            <ul>
+              <li><%= lesson.description %></li>
+              <li> <strong> Dove: </strong> <%= lesson.address %></li>
+              <li> <strong> Per chi: </strong> <%= lesson.level %></li>
+              <li> <strong> Quando: </strong><%= lesson.when %></li>
+            </ul>
+            <%= link_to "prenota", lesson_path(lesson.id) %>
+          </div>
+        </div>
+    <% end %>
+ <% end %>
+</div>
