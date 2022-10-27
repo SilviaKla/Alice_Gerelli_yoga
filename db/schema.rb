@@ -25,7 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_14_130246) do
   create_table "lessons", force: :cascade do |t|
     t.text "description"
     t.string "name"
-    t.boolean "online"
+    t.boolean "online", default: false, null: false
     t.string "address"
     t.float "price"
     t.string "level"
