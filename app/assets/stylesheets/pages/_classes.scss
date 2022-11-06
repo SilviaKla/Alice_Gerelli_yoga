@@ -3,8 +3,8 @@
   margin: 0;
 
  img{
-  height: 300px;
-  width: 200px;
+  height: 500px;
+  width: auto;
   margin: 10px;
   border-radius: 5px;
   box-shadow: 1px 2px 2px 1px rgba(11, 11, 11, 0.226);
@@ -15,35 +15,57 @@
  }
 }
 
-.blue{
-  padding: 0px;
-  margin: 0px;
-}
-
-.violet {
-  padding: 0px;
-  margin: 0px;
-}
 
 .container-blue {
- margin: 10px;
  border-radius: 10px;
  background-color: #0f4d5c53;
+ width: 80%;
+
+ a{
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 16px;
+  background-color: #0f4d5cb6;
+  color:rgb(253, 251, 251) ;
+  margin: 10px;
+}
+
+a:hover{
+  background-color: #0f4d5c;
+}
+
 }
 
 .container-violet {
-  margin: 10px;
   border-radius: 10px;
   background-color: #a538606d;
- }
+  width: 80%;
+
+  a{
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    background-color: #a53860bf;
+    color:rgb(253, 251, 251) ;
+    margin: 10px;
+  }
+
+  a:hover{
+    background-color: #a53860;;
+  }
+}
 
 .violet-text {
-  padding: 20px;
+  padding: 25px;
   margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
   ul{
     padding: 10px;
@@ -55,5 +77,56 @@
 
   li{
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container-blue {
+    width: 90%;
+    text-align: center;
+  }
+  .violet-text {
+    align-items: center;
+  }
+
+  .container-violet {
+    width: 90%;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container-blue {
+    width: 100%;
+    text-align: center;
+  }
+
+  .violet-text {
+    align-items: center;
+  }
+
+  .container-violet {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container-blue {
+    width: 100%;
+    text-align: center;
+  }
+
+  .violet-text {
+    align-items: center;
+  }
+
+  .container-violet {
+    width: 100%;
+    text-align: center;
   }
 }

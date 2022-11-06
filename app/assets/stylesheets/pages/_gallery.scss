@@ -23,16 +23,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: image-url("stones.jpeg");
-  transition-property: background-image, transform, color;
-  transition-timing-function: ease-in-out;
-  transition-duration: 2s;
+  transition: background-image 2s;
 }
 
 #stones:hover{
   background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("stones.jpeg");
-  transition-property: background-image, transform, color;
-  transition-timing-function: ease-in-out;
-  transition-duration: 2s;
 }
 
 #meditation {
