@@ -1,1 +1,55 @@
-<h1>New lesson</h1>
+<nav id = "navbar" class="navbar navbar-expand-lg  navbar-AliceYoga">
+  <div class = "navbar-nav container d-flex align-items-center" id = "margin-zero">
+    <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "logo.png" %>
+    <% end %>
+  </div>
+</nav>
+
+<div class="banner">
+    <h1><%= @lesson.name %></h1>
+</div>
+
+<div class="container-fluid rounded ">
+  <div class = "row justify-content-center p-4 lesson">
+    <div class="col-12 col-lg-6">
+      <div class="d-flex flex-column justify-content-center m-3 p-3">
+        <div class = "text-center p-4">
+          <h3><%= @lesson.name %></h3>
+          <p> <%= @lesson.description %></p>
+        </div>
+        <div class="d-flex justify-content-around m-3">
+          <div class="text-center small-text">
+            <i class="fa-regular fa-calendar-days"></i>
+            <p><strong>quando</strong></p>
+            <p><%= @lesson.when %></p>
+          </div>
+          <div class="text-center small-text">
+            <i class="fa-solid fa-location-pin"></i>
+            <p><strong>dove</strong></p>
+            <p> Online, su Skype</p>
+          </div>
+          <div class="text-center small-text">
+            <i class="fa-solid fa-sun"></i>
+            <p><strong>costo</strong></p>
+            <p><%= @lesson.price%>€ a lezione</p>
+          </div>
+          <div class="text-center small-text">
+            <i class="fa-solid fa-heart"></i>
+            <p><strong>livello</strong></p>
+            <p><%= @lesson.level %></p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="https://ko-fi.com/alicegerelliyoga" class ="button-orange" target="_blank">iscriviti con Ko-fi</a>
+          <a href="#" class ="button-orange" target="_blank">Contattami</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6 text-center">
+      <%= image_tag "yogaonline.jpeg", class: "lesson-img", alt: "lesson-info" %>
+    </div>
+
+  </div>
+</div>

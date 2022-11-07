@@ -80,6 +80,21 @@ a:hover{
   }
 }
 
+.lesson {
+  background-color: white;
+}
+
+.lesson-img {
+  height: 500px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.small-text{
+  width: 200px;
+  padding: 5px;
+}
+
 @media (max-width: 1000px) {
   /* For a screen < 960px, this CSS will be read */
   .container-blue {
