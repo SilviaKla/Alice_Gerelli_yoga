@@ -1,0 +1,57 @@
+<div class="container-fluid rounded col-lg-10" id="contacts">
+  <div class = "row justify-content-center align-items-center p-4">
+    <div class="col-12 col-lg-6">
+      <h2>Contatti</h2>
+      <p>Alice gerelli</p>
+      <p>alice.gerelli@gmail.com</p>
+      <div class="d-flex">
+        <i class="fa-brands fa-instagram"> </i>
+        <a href="https://instagram.com/alice.gerelli.yoga?igshid=YmMyMTA2M2Y=" target="_blank"> instagram </a>
+      </div>
+      <div class="d-flex">
+        <i class="fa-brands fa-youtube"> </i>
+        <a href="https://www.youtube.com/channel/UCE_HlPqYtncdrbdl0OjbBfA" target="_blank">  Il mio canale </a>
+      </div>
+      <div class="d-flex">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <a href="https://ko-fi.com/alicegerelliyoga" target="_blank">Ko-fi</a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="p-4 rounded-md shadow ">
+        <h2>Scrivimi</h2>
+          <hr>
+          <%= simple_form_for(@contact, method: :post, url: contact_index_path, defaults: { input_html: { class: 'contact-form row' } }) do |f| %>
+              <div class="col-lg-12 mb-4">
+                  <div class="form-floating">
+                       <%= f.input_field :name, class: 'form-control form-control-lg light-300', placeholder: 'Name' %>
+                       <label for="floatingname light-300">Nome</label>
+                  </div>
+              </div><!-- End Input Name -->
+
+              <div class="col-lg-12 mb-4">
+                  <div class="form-floating">
+                      <%= f.input_field :email, class: 'form-control form-control-log light-300', placeholder: 'Email' %>
+                      <label for="floatingemail light-300">Email</label>
+                  </div>
+               </div><!-- End Input Email -->
+
+              <div class="col-12">
+                  <div class="form-floating mb-3">
+                      <%= f.input_field :message, as: :text, class: 'form-control light-300', rows: '8', placeholder: 'Message', style: 'height: 200px'  %>
+                      <label for="floatingtextarea light-300">Messaggio</label>
+                  </div>
+              </div><!-- End Textarea Message -->
+
+              <div class="d-none">
+                  <%= f.input :nickname %>
+              </div>
+
+              <div class="col-md-12 col-12 m-auto text-end">
+                  <button type="submit" class="button-orange">invia messaggio</button>
+              </div>
+          <% end %>
+      </div>
+    </div>
+  </div>
+</div>

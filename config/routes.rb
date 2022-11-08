@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: "pages#home"
   resources :lessons
   resources :articles
+  resources :contact, only: [:create]
 end

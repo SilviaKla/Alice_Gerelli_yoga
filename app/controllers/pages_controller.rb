@@ -3,5 +3,15 @@ class PagesController < ApplicationController
 
   def home
     @lessons = Lesson.all
+    @contact = Contact.new
+    @contact = Contact.new(params[:contact])
+    @contact.request = request
+      if @contact.deliver
+        flash.now[:alert] = 'Messaggio inviato correttamente'
+      else
+        flash.now[:error] = 'Could not send message'
+        render :home, status: :unprocessable_entity
+      end
   end
+
 end
