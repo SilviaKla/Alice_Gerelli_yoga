@@ -1,9 +1,8 @@
 .navbar-AliceYoga {
-  justify-content: space-between;
   z-index: 999;
   width: 100%;
   position: absolute;
-  background-color: #0f4d5c5f;
+  background-color: #41575d00;
   box-shadow: none;
   transition-property: background-color, font-size, transform, color;
   transition-timing-function: ease-in-out;
@@ -18,7 +17,7 @@
 }
 
 .sticky-top{
-  justify-content: space-between;
+  padding: 0px;
   z-index: 999;
   width: 100%;
   background-color: #0f4d5c;
@@ -43,17 +42,16 @@
 
 #navbar .navbar-brand img {
   width: 60px;
-  margin: 0 20px;
-}
-
-#navbar > .container-fluid {
-display: flex;
-margin: 0;
+  margin: auto;
 }
 
 #navbar a {
-  margin: 0 40px;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  margin: auto;
   font-family: $headers-font;
+  font-size: 15px;
   font-weight: 700;
   text-decoration: none;
   color: white;
