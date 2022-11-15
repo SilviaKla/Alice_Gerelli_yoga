@@ -12,10 +12,10 @@ require "open-uri"
 Lesson.destroy_all
 
 lesson1 = Lesson.new(
-  name: "Corso in Presenza",
-  description: Faker::Lorem.paragraph(sentence_count: 10),
+  name: "Corsi Hatha Yoga in presenza",
+  description: "Pratica con me in presenza presso la palestra 247Days di Monza. Avvicinati a questa disciplina e approfondiscila in un piccolo gruppo",
   online: false,
-  address: "Via Giuseppe Ferrari 5/A, 20900 Monza",
+  address: "Palestra 247Days, via Ferrari 5, Monza",
   price: 0.0,
   level: "adatto a tutti",
   when: "tutti i Martedì e Giovedì dalle 20:00 alle 21:00"
@@ -24,10 +24,10 @@ lesson1 = Lesson.new(
 lesson1.save
 
 lesson2 = Lesson.new(
-  name: "Corso Online",
-  description: Faker::Lorem.paragraph(sentence_count: 10),
+  name: "Corsi Hatha Yoga Online",
+  description: "Pratica yoga nella privacy di casa, ma live su Skype con la compagnia virtuale di un gruppo. Il corso è aperto a tutti i livelli.",
   online: true,
-  address: "Ovunque nel mondo, basta avere Skype e una connessione ;)",
+  address: "via Skype",
   price: 5,
   level: "adatto a tutti",
   when: "tutti i Mercoledì dalle 19:00 alle 20:00"
