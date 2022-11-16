@@ -14,72 +14,202 @@
 
 #stones {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-image: image-url("stones.jpeg");
-  transition: background-image 2s;
+  transition: all .5s;
+
+  .display-hover-text{
+    display: none;
+  }
 }
 
-#stones:hover{
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("stones.jpeg");
+#stones::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(171,71,0);
+  background: linear-gradient(0deg, rgba(171, 71, 0, 0.855) 0%, rgba(210, 88, 0, 0.608) 2%, rgba(0,212,255,0) 100%);
+}
+
+#stones-container:hover #stones:before,
+#stones-container:focus #stones:before {
+  display: block;
+}
+
+#stones-container:hover #stones,
+#stones-container:focus #stones {
+  transform: scale(1.01);
+
+  .display-hover-text{
+    display: flex;
+    padding:3px;
+    justify-content: space-between;
+    width: 100%;
+    color: rgb(253, 253, 253);
+    font-size: 11px;
+    font-weight: bold;
+    transition: ease-in-out 1s;
+    z-index: 1;
+  }
 }
 
 #meditation {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   background-image: image-url("meditation.jpeg");
+  transition: all .5s;
+
+  .display-hover-text{
+    display: none;
+  }
 }
 
-#meditation:hover{
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("meditation.jpeg");
+#meditation::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(171,71,0);
+  background: linear-gradient(0deg, rgba(171, 71, 0, 0.855) 0%, rgba(210, 88, 0, 0.608) 2%, rgba(0,212,255,0) 100%);
 }
+
+.photo-card-double:hover #meditation:before,
+.photo-card-double:focus #meditation:before {
+  display: block;
+}
+
+.photo-card-double:hover #meditation,
+.photo-card-double:focus #meditation {
+  transform: scale(1.01);
+
+  .display-hover-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    width: 100%;
+    color: rgb(253, 253, 253);
+    font-size: 11px;
+    font-weight: bold;
+    transition: ease-in-out 1s;
+    z-index: 1;
+  }
+}
+
 
 #sun {
-  background-image: image-url("sun.jpeg");
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-image: image-url("sun.jpeg");
+  transition: all .5s;
+
+  .display-hover-text{
+    display: none;
+  }
 }
-#sun:hover{
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("sun.jpeg");
+
+#sun::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(171,71,0);
+  background: linear-gradient(0deg, rgba(171, 71, 0, 0.855) 0%, rgba(210, 88, 0, 0.608) 2%, rgba(0,212,255,0) 100%);
 }
+
+.photo-card-double:hover #sun:before,
+.photo-card-double:focus #sun:before {
+  display: block;
+}
+
+.photo-card-double:hover #sun,
+.photo-card-double:focus #sun {
+  transform: scale(1.01);
+
+  .display-hover-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    width: 100%;
+    color: rgb(253, 253, 253);
+    font-size: 11px;
+    font-weight: bold;
+    transition: ease-in-out 1s;
+    z-index: 1;
+  }
+}
+
 
 #mountain {
-  background-image: image-url("mountain.jpeg");
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-image: image-url("mountain.jpeg");
+  transition: all .5s;
+
+  .display-hover-text{
+    display: none;
+  }
 }
 
-#mountain:hover{
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), #e6712968 95%), image-url("mountain.jpeg");
+#mountain::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(171,71,0);
+  background: linear-gradient(0deg, rgba(171, 71, 0, 0.855) 0%, rgba(210, 88, 0, 0.608) 2%, rgba(0,212,255,0) 100%);
 }
 
+#mountain-container:hover #mountain:before,
+#mountain-container:focus .display-hover:before {
+  display: block;
+}
+
+#mountain-container:hover #mountain,
+#mountain-container:focus #mountain {
+  transform: scale(1.01);
+
+  .display-hover-text{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3px;
+    width: 100%;
+    color: rgb(253, 253, 253);
+    font-size: 11px;
+    font-weight: bold;
+    transition: ease-in-out 1s;
+    z-index: 1;
+  }
+}
 
 
 .text-card {
@@ -120,7 +250,7 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  #mountain {
+  #mountain-container {
   grid-column: span 2 / auto;
   grid-row: span 2 / auto;
   }
@@ -129,7 +259,7 @@
     grid-row: span 2 / auto;
   }
 
-  #stones{
+  #stones-container{
     grid-row: span 2 / auto;
   }
 
@@ -139,7 +269,7 @@
 }
 
 @media (min-width: 970px) {
-  #mountain {
+  #mountain-container {
   grid-row: span 2 / auto;
   }
 
@@ -147,7 +277,7 @@
     grid-row: span 2 / auto;
   }
 
-  #stones{
+  #stones-container{
     grid-row: span 2 / auto;
   }
 
