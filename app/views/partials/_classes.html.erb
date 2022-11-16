@@ -2,7 +2,6 @@
   <h2>i miei corsi</h2>
   <% @lessons.each do |lesson| %>
     <% if lesson.online == false %>
-      <div class = "d-flex justify-content-start my-3">
         <div class= "container-blue row justify-content-center align-items-center">
           <div class= "col-12 col-lg-4">
           <%= image_tag "Liveclasses.jpg", class: "Alice", alt: "Pratica Yoga in palestra" %>
@@ -18,10 +17,8 @@
             <a href="http://www.24hours7days.it/index.php/monza" target="_blank">info</a>
           </div>
         </div>
-      </div>
     <% end %>
     <% if lesson.online == true %>
-      <div class = "d-flex justify-content-end my-3">
         <div class= "container-violet row flex-lg-row-reverse justify-content-center align-items-center">
           <div class= "col-12 col-lg-4">
           <%= image_tag "OnlineClasses.jpg", class: "Alice", alt: "Pratica Yoga a Casa" %>
@@ -37,7 +34,6 @@
             <%= link_to "prenota", lesson_path(lesson.id) %>
           </div>
         </div>
-      </div>
     <% end %>
  <% end %>
 </div>
