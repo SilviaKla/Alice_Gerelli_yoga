@@ -1,3 +1,8 @@
+<% content_for :meta_title, "#{@lesson.name} is on #{DEFAULT_META["meta_product_name"]}" %>
+<% content_for :meta_description, @lesson.description %>
+<% content_for :meta_image, image_tag "yogaonline.jpeg" %>
+
+
 <nav id = "navbar" class="navbar navbar-expand-lg  navbar-AliceYoga">
   <div class = "navbar-nav container d-flex align-items-center" id = "margin-zero">
     <%= link_to root_path, class: "navbar-brand" do %>
