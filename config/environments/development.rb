@@ -39,11 +39,11 @@ Rails.application.configure do
 
   #care if the mailer can't send,need to test
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_url_options = { host: "http://localhost:3000" }
+  config.action_mailer.default_url_options = {host:'localhost', port: 3000}
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: 'smtp.gmail.com',
+    address: 'silvia.pasini03@gmail.com',
     port: 587,
     domain: 'gmail.com',
     authentication: 'plain',
